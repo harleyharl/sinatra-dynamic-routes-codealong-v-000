@@ -14,15 +14,15 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
-  get "/goodbye/:name"
+  get "/goodbye/:name" do
     @user_name = params[:name]
     "goodbye #{@user_name}."
   end
 
-  post "/multiply/:number1/:number2"
+  post "/multiply/:number1/:number2" do
     @number1 = params[:number1]
     @number2 = params[:number2]
-    @number1 + @number2 
+    @number1 + @number2
   end
 
 end
