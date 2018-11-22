@@ -25,7 +25,7 @@ class App < Sinatra::Base
     @num2 = params[:num2]
     num1_integer = "#{@num1}".to_i
     num2_integer = "#{@num2}".to_i
-    num1_integer*num2_integer
+    num1_integer*num2_integer.to_s
   end
 
 end
